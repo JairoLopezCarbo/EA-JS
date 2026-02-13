@@ -4,20 +4,20 @@
 // Stored by value
 
 // Numbers (integer & floating-point)
-let age = 25;
-let price = 99.99;
+const age = 25;
+const price = 99.99;
 console.log(typeof age, age); // number 25
 console.log(typeof price, price); // number 99.99
 
 // Strings
-let firstName = "John Doe";
+const firstName = "John Doe";
 console.log(typeof firstName, firstName); // string John Doe
 
-let greeting = `Hola ${firstName}, tu color preferido es el verde`; // Template Literals
+const greeting = `Hola ${firstName}, tu color preferido es el verde`; // Template Literals
 console.log(greeting); 
 
 // Booleans
-let isAdult = true;
+const isAdult = true;
 console.log(typeof isAdult, isAdult); // boolean true
 
 // Type Coercion in JavaScript (Dynamic types)
@@ -37,10 +37,10 @@ console.log("10" == 10); // true (loose equality converts "10" to Number)
 console.log("10" === 10); // false (strict equality, no type conversion)
 
 // Type Conversion in JavaScript
-let str = "42";
+const str = "42";
 console.log(Number(str)); // 42 (Converted to number)
 
-let num = 100;
+const num = 100;
 console.log(String(num)); // "100" (Converted to string)
 
 console.log(Boolean(1));  // true
@@ -60,7 +60,7 @@ console.log(typeof emptyValue, emptyValue); // object null (JavaScript quirk)
 // Mutable, stored by reference
 
 // JSON Object (key-value pairs)
-let person = {
+const person = {
   name: 'Alice',
   age: 30
 };
@@ -70,7 +70,7 @@ const { personName, personAge } = person; // Destructuring
 
 
 // Arrays (special object storing multiple values)
-let colors = ["red", "green", "blue"];
+const colors = ["red", "green", "blue"];
 console.log(typeof colors, colors); // object [ 'red', 'green', 'blue' ]
 
 const [color1, color2] = colors; // Destructuring
@@ -89,15 +89,15 @@ console.log(typeof greetArrow, greetArrow('Alice')); // function "Hi, I'm Alice"
 
 
 // Date (handling time & date)
-let today = new Date();
+const today = new Date();
 console.log(typeof today, today); // object current date and time
 
 // Set (collection of unique values)
-let set = new Set([1, 2, 3, 3, 2]);
+const set = new Set([1, 2, 3, 3, 2]);
 console.log(typeof set, set); // object Set { 1, 2, 3 }
 
 //Map (key-value pairs with any type of key)
-let map = new Map();
+const map = new Map();
 map.set("name", "Bob");
 console.log(typeof map, map); // object Map { 'name' => 'Bob' }
 

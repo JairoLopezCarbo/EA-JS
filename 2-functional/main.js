@@ -6,7 +6,7 @@ const numbers = [1, 2, 3, 4, 5];
 
 
 // ❌ Imperative (Non-Functional) Approach
-let doubledNumbers = [];
+const doubledNumbers = [];
 for (let i = 0; i < numbers.length; i++) {
   doubledNumbers.push(numbers[i] * 2);
 }
